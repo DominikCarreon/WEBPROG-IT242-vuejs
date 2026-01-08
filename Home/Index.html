@@ -38,8 +38,16 @@
   {{ message }}
 </div>
 
+<div id="app2">
+  <div>
+    <img v-for="x in manyFoods" v-bind:src="x">
+  </div>
+
+</div>
+
 <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 <script src="Js/Vue.js"></script>
+<script src="Js/Images.js"></script>
 
 </body>
 </html>
