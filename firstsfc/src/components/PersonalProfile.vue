@@ -1,6 +1,6 @@
 <template>
 <body>
-
+<div  class="PersonalProfile">
   <header>
     <div class="nav">
       <div class="logo">
