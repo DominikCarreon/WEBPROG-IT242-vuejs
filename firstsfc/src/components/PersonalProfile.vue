@@ -56,10 +56,7 @@ Picture Gallery<br>
 </div>
 
 <div class="footer"><p>© 2025 Dominik's Profile, Inc. All rights reserved.</p></div>
-  
-</div>
 
-  
 </body>
 </template>
 
