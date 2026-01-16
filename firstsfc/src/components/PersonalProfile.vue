@@ -1,10 +1,5 @@
 <template>
 
-<head>
-<title>Dominik's Introduction</title>
-</head>
-<body>
-<h1>Dom's Personal Profile Web page </h1>
 <body>
  
 <h1>Personal Profile Web page </h1>
