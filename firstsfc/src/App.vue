@@ -1,7 +1,6 @@
 <template>
-  <h1>Fruits</h1>
-  <food-item/>
-  <food-item2/>
+  <h1>PersonlProfile</h1>
+  <PersonlProfile>
 </template>
 
 <script></script>
