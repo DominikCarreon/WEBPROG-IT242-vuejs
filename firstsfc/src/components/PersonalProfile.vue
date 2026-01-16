@@ -314,5 +314,5 @@ document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
 
 </script>
 
-<style src="./src/components/css/PersonlProfile.css"></style>
+<style src="./css/PersonlProfile.css"></style>
   
