@@ -55,4 +55,4 @@ export default {
  name: "PersonalProfile",
 };
 </script>
-<style src="./css/PersonalProfile.css"></style>
+<style src="./css/personalprofile.css"></style>
