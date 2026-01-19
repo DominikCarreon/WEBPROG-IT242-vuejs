@@ -55,4 +55,104 @@ export default {
  name: "PersonalProfile",
 };
 </script>
-<style src="./css/PersonalProfile.css"></style>
+<style>
+
+* {
+ box-sizing: border-box;
+}
+body {
+ font-family: "Lucida Sans", sans-serif;
+ font-size: 17px;
+ margin: 0;
+}
+.grid-container {
+ display: grid;
+ grid-template-areas:
+   "header"
+   "menu"
+   "main"
+   "facts"
+   "footer";
+ background-color: rgb(0, 0, 0);
+ gap: 10px;
+ padding: 10px;
+}
+.header {
+ grid-area: header;
+ background-color: rgb(175, 4, 4);
+ text-align: center;
+ color: #ffffff;
+}
+.header > h1 {
+ font-size: 40px;
+}
+.menu {
+ grid-area: menu;
+}
+.menu ul {
+ list-style-type: none;
+ margin: 0;
+ padding: 0;
+}
+.menu li {
+ padding: 8px;
+ margin-bottom: 7px;
+ background-color: #ffee00a6;
+ color: #ffffff;
+}
+.menu li:hover {
+ background-color: #ffdd00;
+}
+.content {
+ grid-area: main;
+ color: #ffffff;
+}
+.content > h1 {
+ font-size: 30px;
+ margin-bottom: 7px;
+ color: #ffffff;
+}
+.content > p {
+ margin-bottom: 7px;
+ color: #ffffff;
+}
+.facts {
+ grid-area: facts;
+ border: 1px solid #ffee00a6;
+ background-color: beige;
+ padding: 10px;
+}
+.facts > h2 {
+ font-size: 20px;
+}
+.facts li {
+ margin-bottom: 5px;
+}
+.footer {
+ grid-area: footer;
+ background-color: #ffee00a6;
+ color: #ffffff;
+ text-align: center;
+ padding: 10px;
+}
+/* Tablet */
+@media (min-width: 600px) {
+ .grid-container {
+   grid-template-areas:
+     "header header header header header header"
+     "menu main main main main main"
+     "facts facts facts facts facts facts"
+     "footer footer footer footer footer footer";
+ }
+}
+/* Desktop */
+@media (min-width: 768px) {
+ .grid-container {
+   grid-template-areas:
+     "header header header header header header"
+     "menu main main main main facts"
+     "footer footer footer footer footer footer";
+ }
+}
+
+</style>
