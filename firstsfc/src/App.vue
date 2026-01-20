@@ -1,14 +1,11 @@
 <template>
-
-  <h1>Fruits</h1>
-  <Personal-Profile/>
-  <food-item/>
-  <food-item2/>
-
-
+  <div>
+    <personal-profile />
+  </div>
 </template>
 
-<script></script>
-
-<style>
-</style> 
+<script>
+export default {
+  name: "App"
+}
+</script>

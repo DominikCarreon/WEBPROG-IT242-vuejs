@@ -9,3 +9,4 @@ app.component('food-item', FoodItem)
 app.component('food-item2', FoodItem2)
 app.component('personal-profile', PersonalProfile)
 app.mount('#app')
+
