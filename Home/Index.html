@@ -1,73 +1,81 @@
 <template>
-<!DOCTYPE html>
-<html>
-<head>
-<title>WebProg IT242 Introduction Dominik V Carreon</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+  <div class="profile-page">
+    <!-- Note -->
+    <div style="background: rgb(247, 247, 247); padding: 5px; text-align: center;">
+      <h4>Activity Customized Layout</h4>
+    </div>
 
-</head>
-<body>
+    <!-- Header -->
+    <header>
+      <h1>WebProg IT242 Introduction Dominik V Carreon</h1>
+      <p>With a <b>flexible</b> layout.</p>
+    </header>
 
-<!-- Note -->
-<div style="background:rgb(247, 247, 247);padding:5px;text-align:center;">
-  <h4>Activity cutomized Layout</h4>
-</div>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+      <a href="https://youtu.be/5-v2BvJkrOk?si=YSeVvij8DmP9G5qA" target="_blank">Link 1</a>
+      <a href="https://youtu.be/5-v2BvJkrOk?si=YSeVvij8DmP9G5qA" target="_blank">Link 2</a>
+      <a href="https://youtu.be/5-v2BvJkrOk?si=YSeVvij8DmP9G5qA" target="_blank">Link 3</a>
+      <a href="https://youtu.be/5-v2BvJkrOk?si=YSeVvij8DmP9G5qA" target="_blank">Link 4</a>
+    </div>
 
-<!-- Header -->
-<header>
-  <h1>WebProg IT242 Introduction Dominik V Carreon</h1>
-  <p>With a <b>flexible</b> layout.</p>
-</header>
+    <!-- Content Container -->
+    <div class="container">
+      <div class="side">
+        <h2>About Me</h2>
+        <h5>Photo of me:</h5>
 
-<!-- Navigation Bar -->
-<div class="navbar">
-  <a href="https://youtu.be/5-v2BvJkrOk?si=YSeVvij8DmP9G5qA</a>
-  <a href="https://youtu.be/5-v2BvJkrOk?si=YSeVvij8DmP9G5qA</a>
-  <a href="https://youtu.be/5-v2BvJkrOk?si=YSeVvij8DmP9G5qA</a>
-  <a href="https://youtu.be/5-v2BvJkrOk?si=YSeVvij8DmP9G5qA</a>
-</div>
+        <div class="fakeimg" style="height: 200px;">
+          <img
+            src="https://as-prod.asyncgw.teams.microsoft.com/v1/objects/0-ea-d7-f6f35dd33910abd4d61fb0dd986223cd/views/imgpsh_fullsize"
+            alt="Profile"
+            style="width: 100%; height: 100%; object-fit: cover;"
+          />
+        </div>
 
-<!-- Content Container -->
-<div class="container">
-  <div class="side">
-    <h2>About Me</h2>
-    <h5>Photo of me:</h5>
-    <div class="fakeimg" style="height:200px;">Image/<img src="https://as-prod.asyncgw.teams.microsoft.com/v1/objects/0-ea-d7-f6f35dd33910abd4d61fb0dd986223cd/views/imgpsh_fullsize"</div>
-    <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
-    <h3>More Text</h3>
-    <p>Lorem ipsum dolor sit ame.</p>
-    <div class="fakeimg" style="height:60px;">Image</div><br>
-    <div class="fakeimg" style="height:60px;">Image</div><br>
-    <div class="fakeimg" style="height:60px;">Image</div>
+        <p>Some text about me in culpa qui officia deserunt mollit anim.</p>
+
+        <h3>More Text</h3>
+        <p>Lorem ipsum dolor sit amet.</p>
+
+        <div class="fakeimg" style="height: 60px;">Image</div><br />
+        <div class="fakeimg" style="height: 60px;">Image</div><br />
+        <div class="fakeimg" style="height: 60px;">Image</div>
+      </div>
+
+      <div class="main">
+        <h2>TITLE HEADING</h2>
+        <h5>Title description, Oct 7, 2025</h5>
+        <div class="fakeimg" style="height: 200px;">Image</div>
+        <p>Some text.</p>
+        <p>
+          Sunt in culpa qui officia deserunt mollit anim id est laborum
+          consectetur adipiscing elit.
+        </p>
+
+        <br />
+
+        <h2>TITLE HEADING</h2>
+        <h5>Title description, Sep 2, 2025</h5>
+        <div class="fakeimg" style="height: 200px;">Image</div>
+        <p>Some text.</p>
+        <p>
+          Sunt in culpa qui officia deserunt mollit anim id est laborum
+          consectetur adipiscing elit.
+        </p>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <h2>Footer</h2>
+    </footer>
   </div>
-  <div class="main">
-    <h2>TITLE HEADING</h2>
-    <h5>Title description, Oct 7, 2025</h5>
-    <div class="fakeimg" style="height:200px;">Image</div>
-    <p>Some text..</p>
-    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-    <br>
-    <h2>TITLE HEADING</h2>
-    <h5>Title description, Sep 2, 2025</h5>
-    <div class="fakeimg" style="height:200px;">Image</div>
-    <p>Some text..</p>
-    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-  </div>
-</div>
-
-<!-- Footer -->
-<footer>
-  <h2>Footer</h2>
-</footer>
-
-</body>
-</html>
 </template>
 
 <script>
 export default {
- name: 'PersonalProfile'
+  name: "PersonalProfile"
 }
 </script>
 
