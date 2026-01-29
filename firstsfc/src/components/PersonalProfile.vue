@@ -74,7 +74,7 @@ body {
    "facts"
    "footer";
  background-color: rgb(0, 0, 0);
- gap: 10px;
+ gap: 12px;
  padding: 10px;
 }
 .header {
