@@ -7,13 +7,11 @@ import CommentForm from './components/CommentForm.vue'
 import Comment from './components/Comment.vue'
 
 const app = createApp(App)
-
-// 1. Register ALL components first
 app.component('food-item', FoodItem)
 app.component('food-item2', FoodItem2)
 app.component('personal-profile', PersonalProfile)
 app.component('comment-form', CommentForm)
 app.component('comment', Comment)
 
-// 2. Mount last
 app.mount('#app')
+
