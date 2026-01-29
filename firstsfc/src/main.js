@@ -6,8 +6,6 @@ import PersonalProfile from './components/PersonalProfile.vue'
 import CommentForm from './components/CommentForm.vue'
 import Comment from './components/Comment.vue'
 
-
-
 const app = createApp(App)
 app.component('food-item', FoodItem)
 app.component('food-item2', FoodItem2)

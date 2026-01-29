@@ -4,8 +4,7 @@
   <personal-profile/>
   <comment-form/>
   <comment/>
-   
-
+  
 
 </template>
 
