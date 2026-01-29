@@ -13,5 +13,6 @@ app.component('food-item2', FoodItem2)
 app.component('personal-profile', PersonalProfile)
 app.component('comment-form', CommentForm)
 app.component('comment', Comment)
+
 app.mount('#app')
 
