@@ -1,16 +1,21 @@
 <template>
-  <div class="comments">
     <h1>Comments</h1>
-
-    <ul v-if="comments.length">
-      <li v-for="comment in comments" :key="comment.id">
-        <strong>{{ comment.name }}</strong>: {{ comment.comment }}
-      </li>
+    <ul>
+      <li v-for="comment in comments" :key="comment.id">{{ comment.name }} {{ comment.comment }}</li>
     </ul>
-
-    <p v-else>No comments yet.</p>
-  </div>
-</template>
+  </template>
+  
+  <script></script>
+  
+  <style>
+    #app > div {
+      border: dashed black 1px;
+      display: inline-block;
+      margin: 10px;
+      padding: 10px;
+      background-color: lightyellow;
+    }
+  </style>
 
 <script setup>
 import { ref, onMounted } from 'vue'
@@ -19,21 +24,23 @@ import { supabase } from '../lib/supabaseClient'
 const comments = ref([])
 
 async function getComments() {
-  const { data, error } = await supabase.from('comments').select()
-  if (!error) comments.value = data
+  const { data } = await supabase.from('comments').select()
+  comments.value = data
 }
 
-onMounted(getComments)
+onMounted(() => {
+  getComments()
+})
 
-// expose so parent can refresh after submit
-defineExpose({ getComments })
 </script>
 
-<style scoped>
-.comments {
-  border: dashed black 1px;
-  margin: 10px;
-  padding: 10px;
-  background-color: lightyellow;
-}
+
+<style>
+  #app > div {
+    border: dashed black 1px;
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    background-color: lightyellow;
+  }
 </style>
